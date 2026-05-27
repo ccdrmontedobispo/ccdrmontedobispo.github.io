@@ -1,3 +1,35 @@
 body {
-  background: red;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
 }
+
+.topo {
+  background: #111;
+  color: white;
+  padding: 25px 20px;
+  border-bottom: 5px solid #d40000;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.logo-area img {
+  width: 120px !important;
+  max-width: 120px !important;
+  height: auto !important;
+  display: block;
+  background: white;
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.logo-area h1 {
+  margin: 0;
