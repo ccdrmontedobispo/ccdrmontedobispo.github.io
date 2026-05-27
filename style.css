@@ -1,56 +1,62 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f6f1df;
+  background: #f3f3f3;
   color: #222;
 }
 
+/* TOPO */
+
 .topo {
-  background: linear-gradient(135deg, #0057a8, #0077c8);
+  background: #111;
   color: white;
   padding: 25px 20px;
-  border-bottom: 5px solid #ffd100;
+  border-bottom: 5px solid #d40000;
 }
 
 .logo-area {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
   text-align: left;
 }
 
 .logo-area img {
-  width: 110px;
-  max-width: 110px;
+  width: 120px;
+  max-width: 120px;
   height: auto;
   display: block;
   background: white;
-  padding: 8px;
+  padding: 10px;
   border-radius: 14px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 .logo-area h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
 }
 
 .logo-area p {
   margin-top: 6px;
-  color: #ffe680;
+  color: #ffd400;
 }
 
+/* MENU */
+
 nav {
-  background: #ffd100;
+  background: #ffffff;
   padding: 14px;
   text-align: center;
+  border-bottom: 3px solid #ffd400;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 nav a {
-  color: #0057a8;
+  color: #111;
   text-decoration: none;
   margin: 0 12px;
   font-weight: bold;
@@ -58,26 +64,33 @@ nav a {
 }
 
 nav a:hover {
-  color: #002f5f;
+  color: #d40000;
 }
 
+/* HERO */
+
 .hero {
-  background: linear-gradient(rgba(0,87,168,0.88), rgba(0,87,168,0.88));
+  background:
+    linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78));
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 90px 20px;
 }
 
 .hero h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   margin-bottom: 12px;
+  color: #ffd400;
 }
 
 .hero p {
   max-width: 760px;
   margin: auto;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
+  line-height: 1.7;
 }
+
+/* CONTEÚDO */
 
 main {
   max-width: 1000px;
@@ -90,10 +103,12 @@ section {
 }
 
 h2 {
-  color: #0057a8;
-  border-left: 6px solid #ffd100;
+  color: #111;
+  border-left: 6px solid #d40000;
   padding-left: 12px;
 }
+
+/* CARDS */
 
 .card {
   background: white;
@@ -101,20 +116,25 @@ h2 {
   border-radius: 14px;
   margin-top: 15px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  border-top: 4px solid #ffd100;
+  border-top: 4px solid #ffd400;
 }
 
 .card h3 {
-  color: #0057a8;
+  color: #111;
 }
 
+/* RODAPÉ */
+
 footer {
-  background: #003d73;
+  background: #111;
   color: white;
   text-align: center;
   padding: 28px;
   margin-top: 40px;
+  border-top: 4px solid #008000;
 }
+
+/* MOBILE */
 
 @media (max-width: 700px) {
 
@@ -124,7 +144,7 @@ footer {
   }
 
   .logo-area h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   nav a {
@@ -133,7 +153,7 @@ footer {
   }
 
   .hero h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 
 }
