@@ -1,1 +1,222 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+}
 
+/* TOPO */
+
+.topo {
+  background: #111111;
+  color: white;
+  padding: 25px 20px;
+  border-bottom: 5px solid #d40000;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.logo-area img {
+  width: 120px !important;
+  max-width: 120px !important;
+  height: auto !important;
+  display: block;
+
+  background: white;
+  padding: 10px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.25);
+}
+
+.logo-area h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.logo-area p {
+  margin-top: 6px;
+  color: #ffd400;
+}
+
+/* MENU */
+
+nav {
+  background: white;
+
+  padding: 14px;
+
+  text-align: center;
+
+  border-top: 4px solid #d40000;
+  border-bottom: 4px solid #ffd400;
+
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.08);
+}
+
+nav a {
+  color: #111111;
+
+  text-decoration: none;
+
+  margin: 0 12px;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #d40000;
+}
+
+/* HERO */
+
+.hero {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url("imagens/file_000000004f78724691a776c9ca4c5010.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 120px 20px;
+
+  border-top: 4px solid #d40000;
+  border-bottom: 4px solid #ffd400;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+
+  margin-bottom: 12px;
+
+  color: #ffd400;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  max-width: 760px;
+
+  margin: auto;
+
+  font-size: 1.12rem;
+
+  line-height: 1.8;
+
+  color: #f0f0f0;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.7);
+}
+
+/* CONTEÚDO */
+
+main {
+  max-width: 1000px;
+
+  margin: auto;
+
+  padding: 35px 20px;
+}
+
+section {
+  margin-bottom: 45px;
+}
+
+h2 {
+  color: #111111;
+
+  border-left: 6px solid #d40000;
+
+  padding-left: 12px;
+}
+
+/* CARDS */
+
+.card {
+  background: white;
+
+  padding: 22px;
+
+  border-radius: 14px;
+
+  margin-top: 15px;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.08);
+
+  border-top: 4px solid #ffd400;
+}
+
+.card h3 {
+  color: #111111;
+}
+
+/* RODAPÉ */
+
+footer {
+  background: #111111;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 28px;
+
+  margin-top: 40px;
+
+  border-top: 4px solid #008000;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .logo-area {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-area h1 {
+    font-size: 1.7rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  .hero {
+    padding: 90px 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+}
